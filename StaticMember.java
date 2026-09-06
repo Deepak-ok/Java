@@ -22,8 +22,8 @@ class StaticMember{
         A a1=new A();
          A a2=new A();
             a1.fun1();
-          //  a2.fun3();
-           // a1.fun2();
+           a2.fun3();
+           a1.fun2();
             a2.fun2();
     }
 }
