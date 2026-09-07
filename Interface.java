@@ -1,6 +1,6 @@
 //interface fuction has already predefined that is already(public,static,abstract or final). So that's why it need to override its function for make it usable
 //interface can't have a constructor
-//can't make object of a interface
+//can't make object of a interface, but we create a reference varible
 //but if made afunction static then you make a body
 interface i1 {
 
