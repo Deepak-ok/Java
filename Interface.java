@@ -4,9 +4,10 @@
 //but if made afunction static then you make a body
 interface i1 {
 
-    int x = 5;
+    int x = 5;  //in a interface that variable is predefined in public, static , final 
 
-    void f1();
+    void f1();  //or in a function that is already predefined in public, abstract.
+    // but if a function is an static function we create a body on that time
 
     static void f2() {
         System.out.println(x);
