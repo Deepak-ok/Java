@@ -2,6 +2,7 @@
 //interface can't have a constructor
 //can't make object of a interface, but we create a reference varible
 //but if made afunction static then you make a body
+// we also made an run function public in an process class because in an interface that function is predefined in public or abstract, so we also override them and public also.
 interface i1 {
 
     int x = 5;  //in a interface that variable is predefined in public, static , final 
