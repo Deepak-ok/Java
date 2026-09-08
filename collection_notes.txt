@@ -1,0 +1,169 @@
+1.collection is an interface.its has an three types of interface child
+  a.List--(but that all four is an class)
+          ArrayList-It is defined using dynamic Array. formula= (current_capacity*3/2)+1
+                   -It is reusable.
+                   -duplicates are allowed.
+                   -order of elements are preserved.
+                   -Null insertion is possible.
+                   -heterogeneous objects are allowed.
+                   - it is an unsynchronised, so it is not  thread safe. but it is fast
+
+          LinkedList
+
+          Vector(1.2,legacy class)-(it is dynamic class that increase our size as like it double)
+                -duplicates are allowed.
+                -insertion order is preserved.
+                -it is an heterogeneous.
+                -in this method are synchronised,so it is a thread safe. but it is slow
+          
+            Function of Vector-
+            a.void addElement(Object O1)
+            b.clear()
+            c.clone()
+            d.contain(Object O1)
+            e.containAll(collection c1)
+            f.copyInto(object[] array)
+            g.elements()
+            h.addAll()
+            i.int capacity()
+            j.boolean equals(Object O1)
+            k.FirstElement()
+
+
+
+          Stack(1.2)(it is also called an legacy class)-it is work in a FILO manner.
+                                                       - it is a child class of an vector not List
+                
+                Function of an Stack-
+                Example-Stack s1=new Stack(); //we can't define its size.
+                a.s1.push(10)
+                b.s1.pop()
+                c.s1.peek()
+                d.s1.empty()
+                e.int search(object O1)
+
+  Function of an List-
+  a.void add(int index,E element) that is used for on kis index pr hume kya data rkhna he like void add(1,z) hume 1 index pr z rkhna he.
+  b.set(int index,E element) it is used for replacement.
+  c.get(int index) they get data on which index.
+  d.int indexOf(Object o) they get index value on which data is placed.
+  e.int lastIndexOf(Object o)
+  f.E remove(int index)
+  g.List <E> subList(int fromIndex,int toIndex)
+  
+  
+  b.set--HashSet(class)-It is ann data structure.
+                       -it is a time complexity is o(n).
+                       -duplicates are no allowed.
+                       -insertion order are not preserved.
+                       -heterogeneous are allowed.
+                       -null values are allowed.
+                       -provide efficient searching.
+                       -default capacity is 16,but after 75% it grwos dynamically.
+                       
+
+            --LinkedHashSet(class)-It is child class of hashSet.
+                                  -insertion order is preserved.
+                                  -hashSet and double linked list both are used here.
+                                  
+
+       --SortedSet(interface)-it is an child interface of set,so its object can't created.
+                             -duplicates are not allowed.
+                             -elements are in sorted order.
+        
+        Function of a SortedSet-
+        a.first()
+        b.last()
+        c.headSet(E toElement)
+        d.tailSet(E fromElement)
+        e.subSet(E fromElement,E toElement)
+        f.comparator()
+       
+
+           --NavigableSet(interface)-it is an child of SortedSet
+            function of an NavigableSet-
+             a.ceiling()
+             b.floor()
+             c.higher(E e)
+             d.lower(E e)
+             e.pollFirst()
+             f.pollLast()
+
+
+           --TreeSet(class)-it is an child of NavigableSet
+      
+
+  c.Queue(the all four is class)--PriorityQueue
+                                --BlockingQueue--PriorityBlockigQueue
+                                              --LinkedBlocking
+Function of collection interface
+a.boolean add(Object O1)  that return boolean type data
+b.boolean addAll(collection c1)  that return boolean type data
+c.boolean remove(Object O1)  that return boolean type data
+d.boolean removeAll(collection c1)  that return boolean type data
+e.boolean retainAll(collection c1)  that return boolean type data,
+f.int size() that describe the size of an array
+g.boolean contains(Object O1) your name is exists or not
+i.void clear()
+j.boolean isEmpty()
+k. Iterator iterator() that return iterator type  data
+
+2.Map(is an interface)--five types
+  a.Hashmap(class)--LinkedHasMap(class)
+  b.WeakHashMap(class)
+  c.IdentityHasMap(class)
+  d.HashTable(class)--Properties(class)
+  e.SortedMap(interface)--NavigableMap(interface)
+                        --TreeMap(class)
+
+---If you want to make an array in java then(int a[]=new int[5])
+
+*Collections is a class and its member 
+                                      --sort() but it is not work in array
+
+
+*collection Farmework LinkedList And ArrayList
+ -LinkedList Functions
+  a.void addFirst(Object O1)
+  b.void addLast(Object O1)
+  c.Object getFirst()
+  d. Object getLast()
+  e.Object removeFirst()
+  f.Object removeLast()
+  g. there are more function also
+
+*Cursor:-Cursor is used to retrieve data from collection object.
+  there are 3 types of cursor.
+   1.Enumeration(interface)-It is an interface in java.
+                           -introduced in 1.0 thus only available in legacy classes(vector, Stack)
+                           -it has a method that's name is .element.
+      funtion of Enumeration-
+      a.boolean hasMoreElement()
+      b.E nextElement(),while E is refers to next element is which type.
+
+   2.Iterator(interface)-it is available for collection classes.
+                        -
+        Function of an iterator-
+        a. public boolean hasNext()
+        b. public object next()
+        c. public void remove()
+
+        Limitations-Enumeration and Iterator both are move i single direction
+                   -only read and remove operation are available.
+                   -not able to add and replce new object.
+
+   3.ListIterator(interface)-it is an child interface of a iterator.
+                            -it is a bidirectional cursor.
+                            -all list implmented classes provide amethod called ListIterator.
+
+    function of an ListIterator-
+    a. public boolean hasNext()
+    b. public object next()
+    c. public void remove()
+    d.E hasPrevious()
+    e.E previous()
+    f.void add(E e)
+    g.void set(E e)
+    h.nextIndex()
+    i.previousIndex()
+       
